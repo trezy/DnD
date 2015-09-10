@@ -1,0 +1,5 @@
+- name: MongoDB | Create data directory
+  file: path={{ applicationDirectory }}/mongodb/data state=directory
+
+- name: MongoDB | Create log directory
+  file: path={{ applicationDirectory }}/mongodb/log state=touch

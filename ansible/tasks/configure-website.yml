@@ -1,0 +1,17 @@
+- name: Website | Create the directory
+  sudo: yes
+  file: dest={{ applicationDirectory }} owner=trezy group=trezy mode=0777 state=directory
+
+- name: Website | Clone the repository
+  git: repo=https://trezy@bitbucket.org/trezy/on-site-oil.git
+       dest={{ applicationDirectory }}/on-site-oil
+
+- name: Website | Install global NodeJS modules
+  npm: name={{ item }} global=yes
+  with_items:
+  - bower
+  - coffee-script
+  - grunt-cli
+
+- name: Website | Install local NodeJS modules
+  npm: path={{ applicationDirectory }}/on-site-oil

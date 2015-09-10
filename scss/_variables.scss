@@ -1,0 +1,56 @@
+$blue: #03a9f4;
+$green: #8bc34a;
+$orange: #ff9800;
+$pink: #e91e63;
+$purple: #9c27b0;
+$red: #f44336;
+$yellow: #ffc107;
+
+$darkGray: #1e2626;
+
+$baseGutterSize: 1rem;
+
+$baseFontColor: black;
+$baseFontFamily: 'IM Fell DW Pica SC', serif;
+$baseFontSize: 30px;
+
+$formFontColor: $baseFontColor;
+$formFontFamily: $baseFontFamily;
+$formFontSize: $baseFontSize;
+
+$formLabelColor: $formFontColor;
+$formLabelSize: $formFontSize / 2;
+
+$disabledBackgroundColor: #666;
+$disabledTextColor: #999;
+
+$fadedAlpha: 0.7;
+$hoverAlpha: 0.2;
+
+$defaultColor: black;
+$defaultColorFaded: rgba( $defaultColor, $fadedAlpha );
+$defaultColorHover: rgba( $defaultColor, $hoverAlpha );
+$defaultAccent: black;
+$defaultAccentFaded: rgba( $defaultAccent, $fadedAlpha );
+$defaultAccentHover: rgba( $defaultAccent, $hoverAlpha );
+
+$primaryColor: #58b957;
+$primaryColorFaded: rgba( $primaryColor, $fadedAlpha );
+$primaryColorHover: rgba( $primaryColor, $hoverAlpha );
+$primaryAccent: #48af46;
+$primaryAccentFaded: rgba( $primaryAccent, $fadedAlpha );
+$primaryAccentHover: rgba( $primaryAccent, $hoverAlpha );
+
+$dangerColor: #d9534f;
+$dangerColorFaded: rgba( $dangerColor, $fadedAlpha );
+$dangerColorHover: rgba( $dangerColor, $hoverAlpha );
+$dangerAccent: #d43f3a;
+$dangerAccentFaded: rgba( $dangerAccent, $fadedAlpha );
+$dangerAccentHover: rgba( $dangerAccent, $hoverAlpha );
+
+$infoColor: black;
+$infoColorFaded: rgba( $infoColor, $fadedAlpha );
+$infoColorHover: rgba( $infoColor, $hoverAlpha );
+$infoAccent: #48af46;
+$infoAccentFaded: rgba( $infoAccent, $fadedAlpha );
+$infoAccentHover: rgba( $infoAccent, $hoverAlpha );

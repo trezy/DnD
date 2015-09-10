@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Half Orc",
+    "abilities": {
+      "constitution": 2,
+      "strength": 2
+    },
+    "age": {
+      "maximum": 75
+    },
+    "alignment": {
+      "ethics": "evil"
+    },
+    "languages": [
+      "common",
+      "orc"
+    ],
+    "skills": [
+      "intimidation"
+    ],
+    "speed": 30,
+    "vision": "darkvision"
+  }
+]

@@ -1,0 +1,27 @@
+.application-nav {
+  align-items: center;
+  display: flex;
+
+  ul {
+    display: flex;
+  }
+
+  a {
+    display: block;
+    padding: 1rem;
+
+    &:after {
+      background-color: black;
+      content: '';
+      display: block;
+      height: 1px;
+      margin: 0 auto;
+      transition: width 0.1s;
+      width: 0;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}

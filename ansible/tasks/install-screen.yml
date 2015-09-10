@@ -1,0 +1,5 @@
+- name: Screen | Install
+  sudo: yes
+  apt: pkg={{ item }}
+  with_items:
+  - screen

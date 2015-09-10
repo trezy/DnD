@@ -1,0 +1,275 @@
+<form>
+  <section>
+    <div class="row column-3">
+      <div class="form-group stretch-2">
+        <label for="name">Name</label>
+        <input
+          class="name"
+          id="name"
+          name="name"
+          required
+          value="{{ name }}">
+      </div>
+
+      <div class="form-group">
+        <label for="level">Level</label>
+        <input max="20" min="0"
+          class="level"
+          id="level"
+          name="level"
+          required
+          type="number"
+          value="{{ level }}">
+      </div>
+    </div>
+    <div class="row column-3">
+      <div class="form-group">
+        <label for="race">Race</label>
+        <input
+          class="race"
+          id="race"
+          list="races-list"
+          name="race"
+          required
+          value="{{ race }}">
+      </div>
+
+      <div class="form-group">
+        <label for="class">Class</label>
+        <input
+          class="class"
+          id="class"
+          list="classes-list"
+          name="class"
+          required
+          value="{{ class }}">
+      </div>
+
+      <div class="form-group">
+        <label for="background">Background</label>
+        <input
+          class="background"
+          id="background"
+          list="backgrounds-list"
+          name="background"
+          required
+          value="{{ background }}">
+      </div>
+    </div>
+    <div class="row column-3">
+      <div class="form-group">
+        <label for="ethics">Ethics</label>
+        <input
+          class="ethics"
+          id="ethics"
+          list="ethics-list"
+          name="ethics"
+          required
+          value="{{ ethics }}">
+      </div>
+
+      <div class="form-group">
+        <label for="morals">Morals</label>
+        <input
+          class="morals"
+          id="morals"
+          list="morals-list"
+          name="morals"
+          required
+          value="{{ morals }}">
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="row column-9">
+      <div class="form-group stretch-2">
+        <label for="strength">Strength</label>
+        <input
+          min="1"
+          max="30"
+          type="number"
+          class="strength"
+          id="strength"
+          name="strength"
+          value="{{ strength }}">
+      </div>
+      <div class="form-group">
+        <label for="strength-modifier">modifier</label>
+        <input
+          type="number"
+          class="strength-modifier"
+          id="strength-modifier"
+          name="strength-modifier"
+          value="{{ strength-modifier }}">
+      </div>
+
+      <div class="form-group stretch-2">
+        <label for="dexterity">Dexterity</label>
+        <input
+          min="1"
+          max="30"
+          type="number"
+          class="dexterity"
+          id="dexterity"
+          name="dexterity"
+          value="{{ dexterity }}">
+      </div>
+        <div class="form-group">
+          <label for="dexterity-modifier">modifier</label>
+          <input
+            type="number"
+            class="dexterity-modifier"
+            id="dexterity-modifier"
+            name="dexterity-modifier"
+            value="{{ dexterity-modifier }}">
+      </div>
+
+      <div class="form-group stretch-2">
+        <label for="constitution">Constitution</label>
+        <input
+          min="1"
+          max="30"
+          type="number"
+          class="constitution"
+          id="constitution"
+          name="constitution"
+          value="{{ constitution }}">
+      </div>
+        <div class="form-group">
+          <label for="constitution-modifier">modifier</label>
+          <input
+            type="number"
+            class="constitution-modifier"
+            id="constitution-modifier"
+            name="constitution-modifier"
+            value="{{ constitution-modifier }}">
+      </div>
+    </div>
+
+    <div class="row column-9">
+      <div class="form-group stretch-2">
+        <label for="intelligence">Intelligence</label>
+        <input
+          min="1"
+          max="30"
+          type="number"
+          class="intelligence"
+          id="intelligence"
+          name="intelligence"
+          value="{{ intelligence }}">
+      </div>
+      <div class="form-group">
+        <label for="intelligence-modifier">modifier</label>
+        <input
+          type="number"
+          class="intelligence-modifier"
+          id="intelligence-modifier"
+          name="intelligence-modifier"
+          value="{{ intelligence-modifier }}">
+      </div>
+
+      <div class="form-group stretch-2">
+        <label for="wisdom">Wisdom</label>
+        <input
+          min="1"
+          max="30"
+          type="number"
+          class="wisdom"
+          id="wisdom"
+          name="wisdom"
+          value="{{ wisdom }}">
+      </div>
+        <div class="form-group">
+          <label for="wisdom-modifier">modifier</label>
+          <input
+            type="number"
+            class="wisdom-modifier"
+            id="wisdom-modifier"
+            name="wisdom-modifier"
+            value="{{ wisdom-modifier }}">
+      </div>
+
+      <div class="form-group stretch-2">
+        <label for="charisma">Charisma</label>
+        <input
+          min="1"
+          max="30"
+          type="number"
+          class="charisma"
+          id="charisma"
+          name="charisma"
+          value="{{ charisma }}">
+      </div>
+        <div class="form-group">
+          <label for="charisma-modifier">modifier</label>
+          <input
+            type="number"
+            class="charisma-modifier"
+            id="charisma-modifier"
+            name="charisma-modifier"
+            value="{{ charisma-modifier }}">
+      </div>
+    </div>
+  </section>
+  <menu type="toolbar" class="control-bar">
+    <button type="submit">Save</button>
+  </menu>
+</form>
+
+
+
+
+
+<datalist id="races-list">
+  <option value="Dragonborn">
+  <option value="Dwarf">
+  <option value="Elf">
+  <option value="Gnome">
+  <option value="Half Elf">
+  <option value="Half Orc">
+  <option value="Halfling">
+  <option value="Human">
+  <option value="Tiefling">
+</datalist>
+
+<datalist id="classes-list">
+  <option value="Barbarian">
+  <option value="Bard">
+  <option value="Cleric">
+  <option value="Druid">
+  <option value="Fighter">
+  <option value="Monk">
+  <option value="Paladin">
+  <option value="Ranger">
+  <option value="Rogue">
+  <option value="Sorcerer">
+  <option value="Warlock">
+  <option value="Wizard">
+</datalist>
+
+<datalist id="backgrounds-list">
+  <option value="Acolyte">
+  <option value="Charlatan">
+  <option value="Criminal">
+  <option value="Entertainer">
+  <option value="Folk Hero">
+  <option value="Guild Artisan">
+  <option value="Hermit">
+  <option value="Noble">
+  <option value="Outlander">
+  <option value="Sage">
+  <option value="Sailor">
+  <option value="Soldier">
+  <option value="Urchin">
+</datalist>
+
+<datalist id="ethics-list">
+  <option value="Lawful">
+  <option value="Neutral">
+  <option value="Chaotic">
+</datalist>
+<datalist id="morals-list">
+  <option value="Evil">
+  <option value="Good">
+  <option value="Neutral">
+</datalist>

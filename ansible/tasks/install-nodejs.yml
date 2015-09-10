@@ -1,0 +1,6 @@
+- name: NodeJS | Install
+  sudo: yes
+  apt: pkg={{ item }}
+  with_items:
+  - nodejs
+  - build-essential

@@ -1,0 +1,74 @@
+// Default state
+button,
+.button {
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  outline: 0;
+  overflow: hidden;
+  padding: 0.5rem;
+  text-align: center;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color;
+  white-space: nowrap;
+
+  &[disabled] {
+    cursor: default;
+  }
+}
+
+// Sizes
+.button-small {
+  padding: 0.5rem;
+}
+
+.button-large {
+  padding: 1.5rem;
+}
+
+// Styles
+.button-default {
+  background-color: $defaultColorFaded;
+  border-color: $defaultAccentFaded;
+
+  &:hover,
+  &:focus {
+    background-color: $defaultColorHover;
+    border-color: $defaultAccentHover;
+  }
+}
+
+.button-primary {
+  background-color: $primaryColorFaded;
+  border-color: $primaryAccentFaded;
+
+  &:hover,
+  &:focus {
+    background-color: $primaryColorHover;
+    border-color: $primaryAccentHover;
+  }
+}
+
+.button-danger {
+  background-color: $dangerColorFaded;
+  border-color: $dangerAccentFaded;
+
+  &:hover,
+  &:focus {
+    background-color: $dangerColorHover;
+    border-color: $dangerAccentHover;
+  }
+}
+
+.button-info {
+  background-color: $infoColorFaded;
+  border-color: $infoAccentFaded;
+
+  &:hover,
+  &:focus {
+    background-color: $infoColorHover;
+    border-color: $infoAccentHover;
+  }
+}

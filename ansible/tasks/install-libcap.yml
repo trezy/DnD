@@ -1,0 +1,5 @@
+- name: libcap | Install
+  sudo: yes
+  apt: pkg={{ item }}
+  with_items:
+  - libcap2-bin

@@ -1,0 +1,48 @@
+@mixin columns ( $columns ) {
+  @for $i from 1 through $columns {
+    &.column-#{$i} > * {
+      flex-basis: calc( 100% / #{$i} - ( #{$baseGutterSize} * 2 ) );
+    }
+  }
+
+  @for $i from 1 through $columns {
+    .stretch-#{$i} {
+      flex-grow: #{$i};
+    }
+  }
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+section > header,
+.row {
+  margin-bottom: $baseGutterSize;
+}
+
+section > header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.row {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  margin: 0 -#{$baseGutterSize} $baseGutterSize;
+  width: 100%;
+
+  > * {
+    margin: 0 $baseGutterSize;
+  }
+
+  @include columns ( 12 );
+}

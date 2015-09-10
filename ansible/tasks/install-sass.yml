@@ -1,0 +1,10 @@
+- name: Sass | Install dependencies
+  sudo: yes
+  apt: pkg={{ item }}
+  with_items:
+  - ruby
+  - rubygems
+
+- name: Sass | Install
+  sudo: yes
+  gem: name=sass

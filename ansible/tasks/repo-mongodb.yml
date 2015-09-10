@@ -1,0 +1,8 @@
+- name: Repositories | MongoDB
+  sudo: yes
+  apt_key: keyserver=keyserver.ubuntu.com id=7F0CEB10
+
+- name: Repositories | Create MongoDB list file
+  sudo: yes
+  copy: src=files/mongodb.list
+        dest=/etc/apt/sources.list.d/mongodb.list

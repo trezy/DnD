@@ -1,0 +1,36 @@
+---
+- hosts: all
+  remote_user: trezy
+  vars:
+    applicationDirectory: /application
+
+  tasks:
+  # Install missing repositories
+  - include: tasks/repo-mongodb.yml
+
+  # Update the apt cache and upgrade all upgradeable packages
+  - include: tasks/update.yml
+  - include: tasks/upgrade.yml
+
+  # Install dependencies
+  - include: tasks/install-git.yml
+  - include: tasks/install-libcap.yml
+  - include: tasks/install-mongodb.yml
+  - include: tasks/install-nodejs.yml
+  - include: tasks/install-sass.yml
+  - include: tasks/install-screen.yml
+
+  # Configure MongoDB
+  - include: tasks/configure-mongodb.yml
+    notify:
+    - start mongod
+
+  # Configure NodeJS
+  - include: tasks/configure-nodejs.yml
+
+  # Configure Website
+  - include: tasks/configure-website.yml
+
+  handlers:
+    # start|stop mongod
+    - include: handlers/mongodb.yml

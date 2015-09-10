@@ -1,0 +1,3 @@
+- name: INSTALL | Upgrade apt cache
+  sudo: yes
+  apt: upgrade=yes

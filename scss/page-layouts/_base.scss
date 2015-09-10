@@ -1,0 +1,43 @@
+body {
+  align-content: stretch;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+main {
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+  height: auto;
+  padding: 0 $baseGutterSize;
+  transition: height 0.4s;
+
+  &:empty {
+    flex-grow: 0;
+    height: 0;
+  }
+
+  > * {
+    flex-shrink: 0;
+  }
+}
+
+.timeline {
+  display: flex;
+  bottom: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: translateY( calc( 100% - 10px ) );
+  transition: transform 0.2s;
+
+  &:hover,
+  main:empty ~ & {
+    transform: translateY( 0 );
+  }
+}

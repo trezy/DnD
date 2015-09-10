@@ -1,0 +1,19 @@
+[
+  {
+    "alignment": "Lawful Neutral",
+    "captainOfTheGuard": "Walgrim Helgi",
+    "governingBody": "The Council of Lords",
+    "name": "Hammerlock",
+    "population": "29602",
+    "systemOfGovernment": "Oligarchy",
+    "wealth": "148010000"
+  }, {
+    "alignment": "Neutral",
+    "captainOfTheGuard": "Cobb Istvan",
+    "governingBody": "The Lightforge Smiths",
+    "name": "Dunlin",
+    "population": "1836",
+    "systemOfGovernment": "Meritocracy",
+    "wealth": "73440"
+  }
+]

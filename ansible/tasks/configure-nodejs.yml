@@ -1,0 +1,15 @@
+- name: NodeJS | Create .npmrc
+  copy: src=files/.npmrc
+        dest=~/.npmrc
+        owner=trezy
+        group=trezy
+
+- name: NodeJS | Add ~/.node to the PATH
+  copy: src=files/.bashrc
+        dest=~/.bashrc
+        owner=trezy
+        group=trezy
+
+- name: NodeJS | Allow the use of port 80
+  sudo: yes
+  raw: setcap cap_net_bind_service=+ep /usr/bin/nodejs
